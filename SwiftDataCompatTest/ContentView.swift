@@ -31,13 +31,9 @@ struct ContentView: View {
     private nonisolated func test() async {
         do {
             let container = try ModelContainer(for: MyModel.self)
-            // ignored
+            print("inited container")
         } catch {
             print("error \(error)")
         }
     }
-}
-
-#Preview {
-    ContentView()
 }

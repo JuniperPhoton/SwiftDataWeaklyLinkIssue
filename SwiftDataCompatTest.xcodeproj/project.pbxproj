@@ -7,9 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22C983932DDB9CF20090194C /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C983922DDB9CF20090194C /* SwiftData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		22C983962DDB9D3F0090194C /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 22C983952DDB9D3F0090194C /* MyLibrary */; };
+		22C983962DDB9D3F0090194C /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 22C983952DDB9D3F0090194C /* MyLibrary */; settings = {ATTRIBUTES = (Required, ); }; };
+		22C983FD2DDBA7480090194C /* MyLibrary in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 22C983952DDB9D3F0090194C /* MyLibrary */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		22C983FE2DDBA7620090194C /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C983922DDB9CF20090194C /* SwiftData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22C983E02DDBA12C0090194C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				22C983FD2DDBA7480090194C /* MyLibrary in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		22C9837E2DDB9C100090194C /* SwiftDataCompatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataCompatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,8 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C983FE2DDBA7620090194C /* SwiftData.framework in Frameworks */,
 				22C983962DDB9D3F0090194C /* MyLibrary in Frameworks */,
-				22C983932DDB9CF20090194C /* SwiftData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +89,7 @@
 				22C9837A2DDB9C100090194C /* Sources */,
 				22C9837B2DDB9C100090194C /* Frameworks */,
 				22C9837C2DDB9C100090194C /* Resources */,
+				22C983E02DDBA12C0090194C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +304,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juniperphoton.grid.SwiftDataCompatTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -327,6 +344,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juniperphoton.grid.SwiftDataCompatTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
