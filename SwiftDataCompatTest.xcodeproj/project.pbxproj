@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		22C983932DDB9CF20090194C /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C983922DDB9CF20090194C /* SwiftData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		22C983962DDB9D3F0090194C /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 22C983952DDB9D3F0090194C /* MyLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22C9837E2DDB9C100090194C /* SwiftDataCompatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataCompatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C983922DDB9CF20090194C /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.4.sdk/System/Library/Frameworks/SwiftData.framework; sourceTree = DEVELOPER_DIR; };
+		22C983942DDB9D220090194C /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyLibrary; path = Packages/MyLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C983962DDB9D3F0090194C /* MyLibrary in Frameworks */,
 				22C983932DDB9CF20090194C /* SwiftData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,6 +41,7 @@
 		22C983752DDB9C100090194C = {
 			isa = PBXGroup;
 			children = (
+				22C983942DDB9D220090194C /* MyLibrary */,
 				22C983802DDB9C100090194C /* SwiftDataCompatTest */,
 				22C983912DDB9CF20090194C /* Frameworks */,
 				22C9837F2DDB9C100090194C /* Products */,
@@ -80,6 +84,7 @@
 			);
 			name = SwiftDataCompatTest;
 			packageProductDependencies = (
+				22C983952DDB9D3F0090194C /* MyLibrary */,
 			);
 			productName = SwiftDataCompatTest;
 			productReference = 22C9837E2DDB9C100090194C /* SwiftDataCompatTest.app */;
@@ -356,6 +361,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22C983952DDB9D3F0090194C /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22C983762DDB9C100090194C /* Project object */;
 }
