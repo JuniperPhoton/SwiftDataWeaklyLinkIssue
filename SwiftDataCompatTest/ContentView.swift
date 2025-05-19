@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
     var body: some View {
@@ -16,6 +17,21 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .task {
+            if #available(iOS 17.0, *) {
+                await test()
+            }
+        }
+    }
+    
+    @available(iOS 17.0, *)
+    private nonisolated func test() async {
+        do {
+            let container = try ModelContainer(for: MyModel.self)
+            // ignored
+        } catch {
+            print("error \(error)")
+        }
     }
 }
 
