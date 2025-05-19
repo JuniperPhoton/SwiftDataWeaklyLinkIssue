@@ -20,6 +20,8 @@ struct ContentView: View {
         .task {
             if #available(iOS 17.0, *) {
                 await test()
+            } else {
+                print("SwiftData not available")
             }
         }
     }

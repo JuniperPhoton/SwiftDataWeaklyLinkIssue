@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		22C983932DDB9CF20090194C /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C983922DDB9CF20090194C /* SwiftData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		22C9837E2DDB9C100090194C /* SwiftDataCompatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataCompatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C983922DDB9CF20090194C /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.4.sdk/System/Library/Frameworks/SwiftData.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C983932DDB9CF20090194C /* SwiftData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				22C983802DDB9C100090194C /* SwiftDataCompatTest */,
+				22C983912DDB9CF20090194C /* Frameworks */,
 				22C9837F2DDB9C100090194C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,14 @@
 				22C9837E2DDB9C100090194C /* SwiftDataCompatTest.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		22C983912DDB9CF20090194C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22C983922DDB9CF20090194C /* SwiftData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
