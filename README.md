@@ -1,4 +1,4 @@
-# Addressing SwiftData Weak Linking Issues on iOS 16
+# Addressing SwiftData Weakly Linking Issues on iOS 16
 
 See this blog for more details:
 
